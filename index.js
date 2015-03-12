@@ -1,24 +1,6 @@
-console.log("hello");
-console.log("     "); // empty line
-console.log("world");
-
-function halp() {
-	console.log(arguments);
-	console.log(arguments.callee.caller.toString())
-	console.log(arguments.callee.caller.toString())
-
-}
-
-function myfunk() {
-	var obj = {
-		"foo":"bar",
-		"this":"that"
-	}
-	halp('hello', "red", obj);
-}
-
-myfunk();
-
+// console.log("hello");
+// console.log("     "); // empty line
+// console.log("world");
 
 // see: http://stackoverflow.com/questions/11386492/accessing-line-number-in-v8-javascript-chrome-node-js
 Object.defineProperty(global, '__stack', {
@@ -39,4 +21,22 @@ Object.defineProperty(global, '__line', {
   }
 });
 
-console.log(__line);
+function halp() {
+	console.log(arguments);
+	console.log(arguments.callee.caller.toString())
+	console.log(arguments.callee.caller.toString())
+
+}
+
+function myfunk() {
+	var obj = {
+		"foo":"bar",
+		"this":"that"
+	}
+	halp('hello', "red", obj, __line);
+}
+
+// myfunk();
+
+// console.log(__line);
+module.exports = halp;
