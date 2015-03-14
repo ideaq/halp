@@ -22,9 +22,33 @@ Object.defineProperty(global, '__line', {
 });
 
 function halp() {
+	console.log("Argument Count: "+arguments.length)
 	console.log(arguments);
-	console.log(arguments.callee.caller.toString())
-	console.log(arguments.callee.caller.toString())
+	console.log(" - - - - - - - -")
+	var keys = Object.keys(arguments);
+	console.log(keys)
+	console.log(" - - - - - - - -")
+	keys.map(function(a){
+		console.log(arguments[a]);
+	})
+	console.log(arguments.callee.caller.name)
+	var caller = arguments.callee.caller.toString()
+	console.log(caller)
+	clines = caller.split('\n');
+	console.log("Caller Lines:"+clines.length)
+	console.log(" ")
+	console.log(" - - - - - - - -")
+	for (var i = 1; i < clines.length - 1; i++) {
+		console.log(i + ' ' + clines[i]);
+	};
+	console.log(" - - - - - - - -")
+	console.log(" ")
+	// clines.map(function(line){
+	// 	if(line.indexOf('halp') > -1) {
+
+	// 	}
+	// })
+
 
 }
 

@@ -11,7 +11,7 @@ Why do we need *another* logging library?
 
 ### Top 5 Reasons
 
-1. ***Intuitive*** ([don't make me think!](http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758)) "*works like **console.log** but **much** cooler*" (***no learning curve***!);
+1. ***Intuitive*** ([don't make me think!](http://www.amazon.com/Dont-Make-Me-Think-Usability/dp/0321344758)) "*works like* **console.log** *but* ***much*** *cooler*" (***no learning curve***!);
 2. ***Sensible defaults*** means it ***"Works out of the box"*** & *Nothing to configure* until you want to use more advanced options.
 3. 
 4. **Clarity** / **Simplicity** in both the code and tests
@@ -29,8 +29,17 @@ Why do we need *another* logging library?
 
 ### Sensible Defaults
 
+### Easy 
+
++ output a little or as much as you want/need!
++ do not force people to *remember the order of arguments/parameters. 
++ any number of arguments permissable.
++ *intelligently* 
+
 
 ### Evironment Variables as Settings
+
+### __line (*global* to help you debug)
 
 
 Run with environment variables *not* [config files](http://12factor.net/config).

@@ -7,20 +7,34 @@ https://strongloop.com/strongblog/compare-node-js-logging-winston-bunyan/
 + (Not so) Advanced logging with NodeJs:
 http://tostring.it/2014/06/23/advanced-logging-with-nodejs/
 + Nodejitsu logging article: https://docs.nodejitsu.com/articles/intermediate/how-to-log
++ Mastering Node Logging: http://devgigs.blogspot.co.uk/2014/01/mastering-nodejs-logging.html
++ SOQ: http://stackoverflow.com/questions/12016474/node-js-logging
++ Joyent blog on loggin in prod: https://www.joyent.com/blog/node-js-in-production-runtime-log-snooping
 
 
 ### Logging-as-a-Service (Third-Party) Providers
 
-+ RayGun: https://raygun.io/
++ RayGun: https://raygun.io/pricing
 + Log4stuff: http://log4stuff.com/
++ LogEntries: https://logentries.com/doc/nodejs/ &
+https://www.npmjs.com/package/le_node
++ Loggly: https://www.loggly.com/docs/nodejs-logs/
 + Splunk: https://www.splunk.com/en_us/products/pricing.html
+
 
 ### Useful
 
 + Node **util**: https://nodejs.org/api/all.html#all_util_log_string
++ Node **console**: https://nodejs.org/api/console.html
 + Line numbers in Node/JS: 
 http://stackoverflow.com/questions/11386492/accessing-line-number-in-v8-javascript-chrome-node-js
-
++ V8 stack traces (felixg): https://github.com/felixge/node-stack-trace
++ StatsD sample config:
+https://github.com/etsy/statsd/blob/master/exampleConfig.js
+JS Arguments: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/arguments
++ Path of caller function in Node:
+http://stackoverflow.com/questions/13227489/how-can-one-get-the-file-path-of-the-caller-function-in-node-js
+Node **process** module: https://github.com/bpaquet/node-logstash
 
 ### Existing Modules
 
